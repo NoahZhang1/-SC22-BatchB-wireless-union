@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!--<title>LyricBot</title>-->
+        <title>Fake News Generator</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- JQUERY -->
+        <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <!--<link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet" />-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <!--
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <li class="sidebar-brand"><a href={{ url_for('home')}}>Genre based story project</a></li>
+              <li class="sidebar-nav-item"><a href={{ url_for('home')}}>Home </a></li>
+              <li class="sidebar-nav-item"><a href={{ url_for('results')}}>Get your story</a></li>
+              <li class="sidebar-nav-item"><a href="https://www.github.com">Our Github</a></li>
+              <li class="sidebar-nav-item"><a href="https://www.ai-camp.org">AI Camp</a></li>
+            </ul>
+        </nav>
+        -->
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center" style="background: linear-gradient(to top, #49c191, #00bcd4)">
+         <!-- #6c9069, #94a37c, #d4c192 -->
+          <!<span style='color:#d4c192'></span>
+          
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1 text-dark">Fake News Generator</h1>
+                <h2 class="mb-2 text-dark">Choose from the topics below!</h2>
+                <h3 class="mb-5 text-light"> <em>Political, Crime, Entertainment, Comedy, Impact, or World News </em></h3>
+                <a class="btn btn-warning btn-xl" href={{ url_for('results')}}>Get Your Fake News!!</a>
+            </div>
+        </header>
+        <!-- The Project. Note: https://thesabbir.github.io/simple-line-icons/ will give you a cheat sheet for the icons available-->
+        <section class="content-section bg-success text-white text-center" id="theproject">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-light mb-0 bg-success" style = "background: linear-gradient(to top, #36ba81)">Specs + Features</h3>
+                    <h2 class="text-dark mb-5">The Project</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <!--<div class="col-lg-3 col-md-6 mb-5 mb-lg-0">-->
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-book-open"></i></span>
+                      
+                        <h4><strong>Generate your fake headline with any prompt</strong></h4>
+                        <p class="text-dark mb-0">Trained with a kaggle dataset of over 200,000 news headline in different categories and a GPT-2 based aitextgen model with 124 million parameters, we built a model that can generate fake headlines that are both interesting and qualitatively convincing</p>
+                    </div>
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-note"></i></span>
+                      
+                        <h4><strong>Headlines and article - we can do both! </strong></h4>
+                        <p class="text-dark mb-0">We achieved not only fake headline generation but also fake news content generation with generated fake headline being fed as input, made possible by grover mode</p>
+                    </div>
+                  <br>
+                  <br>
+                  <div class="col-md-6 mb-5 mb-lg-0" style= "border
+                                                             -spacing: 15px 50px"; >
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-clock"></i></span>
+                        <h4><strong>Interactive Website</strong></h4>
+                        <p class="text-dark mb-0"> We made an interactive website for users to enter prompt for the news headline and allows user to get corresponding news content within one single page, which was all made possible by deploying chunky models backend with multiprocessing</p>
+                    </div>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-docs"></i></span>
+                        <h4><strong>Extensions - discord bot and more!</strong></h4>
+                        <p class="text-dark mb-0">We deployed our model to a discord bot where the bot automatically generate fake headlines accordingly to the prompt message that user sent in the channel</p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+      
+      
+      
+      
+      <section class="content-section bg-success text-white text-center" id="theproject">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-light mb-0 bg-success" style = "background: linear-gradient(to top, #36ba81)">Dataset</h3>
+                    <h2 class="text-dark mb-5">Categorical Fake News Dataset</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <!--<div class="col-lg-3 col-md-6 mb-5 mb-lg-0">-->
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/dataset.png') }}" />
+                      
+                        <h4><strong>Categorical News Dataset from Kaggle</strong></h4>
+                        <p class="text-dark mb-0">We found our dataset on Kaggle, where the dataset contains over 200,000 pieces of news headline with 6 different categories</p>
+                    </div>
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/preprocessing.png') }}" />
+                        <h4><strong>Preprocessing</strong></h4>
+                        <p class="text-dark mb-0">We used nltk and string library to do dataset preprocessing and split dataset accordingly to their corresponding categories</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+      
+      
+      
+     
+      
+      
+      <section class="content-section text-light text-center" style = "background: linear-gradient(to bottom, #49C191, #f0d000" id="themodel">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-light mb-0">Models and Training</h3>
+                    <h2 class="text-dark mb-5"> How We Made the Models</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <!--<div class="col-lg-3 col-md-6 mb-5 mb-lg-0">-->
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        
+                      <!-- this is the image we had before: img class="img-fluid" src="{{ url_for('static',filename='img/model_detail (3).png') }}" alt="..." /-->
+                      
+                      <img class="img-fluid" src="{{ url_for('static',filename='img/aitextgen.png') }}" />
+                        <h4><strong>GPT-2 based aitextgen </strong></h4>
+                        <p class="text-dark mb-0">We used aitextgen for headline generation. All models were trained by finetuning the 124M pre-trained language model</p>
+                    </div>
+                  <br>
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/grover.png') }}" />
+                      
+                        <h4><strong>Grover </strong></h4>
+                        <p class="text-dark mb-0">Grover is a fake news generation and detection model published by University of Washington in Dec 2020. Trained with news dataset of 120 gigabyte large, the grover can achieve SOTA performance in generating fake news content</p>
+                    </div>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="col-md-6 mb-5 mb-lg-0" style= "border
+                                                             -spacing: 15px 50px"; >
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/training.png') }}" />
+                        <h4><strong>Process</strong></h4>
+                        <p class="text-dark mb-0"> Finetuing the aitextgen model with news headline dataset with different categories usually take up to 30 minutes. With generated headline feed as input, we can utilize the grover model for content generation</p>
+                    </div>
+                  <br> 
+                  <br> 
+                  <br>
+                  <div class="col-md-6 mb-5 mb-lg-0">
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/multiprocessing.png') }}" />
+                        <h4><strong>Problem-Solving</strong></h4>
+                        <p class="text-dark mb-0">Due to the complexity of the grover model, generation of news content with CPU is time-consuming - a successful generation usually takes around 2 minutes, which consistently causes 502 timeout. With that in mind, we utilized multiprocessing to allow different tasks to be held at the same time.</p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+      
+      
+      
+      
+      <section class="content-section bg-danger text-white text-center" style = "background: linear-gradient(to top, #F0D000)" id="discordbot">
+            <div class="container px-4 px-lg-5" >
+                <div class="content-section-heading" style="background: linear-gradient(to top, #F0D000)">
+                    <h2 class="text-dark mb-5">The Discord Fake News Generator Bot!</h2>
+                  <h3 class="text-dark mb-1" style = "background: linear-gradient(to top, #F0D000)"> Generating fake news headlines accordingly to the message prompt in the channel</h3>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <!--<div class="col-lg-3 col-md-6 mb-5 mb-lg-0">-->
+                    <img class="img-fluid" src="{{ url_for('static',filename='img/discordbot1.png') }}" />
+                  <img class="img-fluid" src="{{ url_for('static',filename='img/discordbot2.png') }}" />
+                </div>
+            </div>
+        </section>
+      
+      
+      
+      <section class="content-section bg-danger text-white text-center" style = "background: linear-gradient(to bottom, #F0D000, #FCA708)" id="theproject">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading">
+                    <h3 class="text-light mb-0">Problem-solving</h3>
+                    <h2 class="text-dark mb-5">Challenges We Faced</h2>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <!--<div class="col-lg-3 col-md-6 mb-5 mb-lg-0">-->
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-folder"></i></span>
+                      
+                        <h4><strong>Organization</strong></h4>
+                        <p class="text-dark mb-0">"Trying to find where the actual code is while scrolling through 8 different folders because everything is complicated and hard. Also coding in general."</p>
+                    </div>
+                    <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-puzzle"></i></span>
+                      
+                        <h4><strong>Limited Coding Knowledge </strong></h4>
+                        <p class="text-dark mb-0">"Most of the people on our team had no idea how to build a website let alone build our own project. However with the help of our Instructor we were able to learn the basics of coding and html which allowed us to build a beautiful functioning website."</p>
+                    </div>
+                  <br>
+                  <br>
+                  <div class="col-md-6 mb-5 mb-lg-0" style= "border
+                                                             -spacing: 15px 50px"; >
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-phone"></i></span>
+                        <h4><strong>Technical Difficulties</strong></h4>
+                        <p class="text-dark mb-0"> "From gateway errors to poor connection there were many computer issues when it came to creating this product. There were also moments were Cocalc didn't want to connect which led to lost time in developing our website."</p>
+                    </div>
+                  <br>
+                  <br>
+                  <br>
+                  <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-target"></i></span>
+                        <h4><strong>Model Deployment</strong></h4>
+                        <p class="text-dark mb-0">Resolving dependencies of model environments, especially wrapping two different models, is hard. We had different version of python installed in different conda environment and managed to switch to an older tenserflow version for support</p>
+                    </div> 
+                  
+                  <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-cloud-download"></i></span>
+                        <h4><strong>Model Generation</strong></h4>
+                        <p class="text-dark mb-0">A consistent 502 timeout occured when we tried to generate result from our model, and potentially causing 504 errors as well. We managed to solve it using multiprocessing</p>
+                    </div> 
+                  
+                  <div class="col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-hourglass"></i></span>
+                        <h4><strong>TIME!!!!</strong></h4>
+                        <p class="text-dark mb-0">TIME IS A HUGE ISSUE and we can further polish our project if we got more time</p>
+                    </div> 
+                </div>
+            </div>
+        </section>
+      
+      
+      
+      
+
+<section class="content-section" style= "background: linear-gradient(to bottom, #FCA708, #FFFFFF)" id="aboutus">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-light mb-0">About Us</h3>
+                    <h2 class="mb-5">The Team</h2>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Ashley Zhang</div>
+                                  <div class="h2">Political News</div>
+                                    <p class="mb-0">HEYY I'm Ashley! Class of 2027, 2009'er. I love volleyball, animating, and kayaking. Drawing is also my passion! I plan to study Machine Learning or Finance. ~Have a wonderful day~ :)</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static',filename='img/ash-profile.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                   <div class="h1"> Christina Joseph</div>
+                                    <div class="h2">ENTERTAINMENT and COMEDY</div>
+                                    <p class="mb-0">Proud member of Class 2024. Along with computer science I love singing, piano, tennis, robotics and reading. In the future I hope to be studying an area I am passionate about while traveling around the world!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static',filename='img/IMG-1840 (13).jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Dorian Choy</div>
+                                    <div class="h2">CRIME and IMPACT</div>
+                                    <p class="mb-0">Lazy couch potato ready to sleep. Wishes he didn't have to learn things. Wants to be rich and not have to do work.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static',filename='img/sloth_pfp_3_900x900.jpg') }}" alt="..." />
+                        </a>                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Irene Liu</div>
+                                    <div class="h2">WORLD NEWS and frontend design</div>
+                                    <p class="mb-0">Class of 2025! I love to binge shows, paint, listen to music, and run. My goal in life is for my cat to love me and to learn how to play the guitar properly. I also hope I end up with a job that keeps me happy. @ireneliiu on ig 🥶</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static',filename='img/portfoliov3.png') }}" alt="..." />
+                          <!--dimensions for my img are 894x607 ok no more edits - irene-->
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                      
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Leroy Frederick</div>
+                                    <div class="h2">Quality Control</div>
+                                    <p class="mb-0">A thorough quality controller who loves Natural Language Processing!</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static',filename='img/leroy.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#!">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="h1">Steven Wang</div>
+                                    <div class="h2">Grover Generation and some backend</div>
+                                    <p class="mb-0">Class of 2025. I like playing video games and programming. In the future I plan to be studying Computer Science.</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{{ url_for('static',filename='img/stevenportfolio.jpg') }}" alt="..." />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!--         <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/aicampdotorg/"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/AICampOfficial"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/minimaxir/aitextgen"><i class="icon-social-github"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; LyricBot AI Camp Team (mitch cutts) 2022 </p>
+            </div>
+        </footer>  -->
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- TEXTGEN JS-->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/text_gen.js') }}" defer=""></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+    </body>
+</html>

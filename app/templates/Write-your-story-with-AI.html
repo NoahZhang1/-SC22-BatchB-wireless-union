@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta namem="author" content="" />
+        <title>Fake News Generator</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- JQUERY -->
+        <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" style= "background: linear-gradient(to top, #1D809F, #49C191)" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav" style= "background: linear-gradient(to top, #1D809F, #49C191)">
+              <li class="sidebar-brand"><a href={{ url_for('home')}}>Fake AI news</a></li>
+              <li class="sidebar-nav-item"><a href={{ url_for('home')}}>Home </a></li>
+              <li class="sidebar-nav-item"><a href={{ url_for('results')}}>Try The Model</a></li>
+<hr size='1'/>
+
+              <li class="sidebar-nav-item"><a href="https://www.github.com">Our Github</a></li>
+              <li class="sidebar-nav-item"><a href="https://www.ai-camp.org">AI Camp</a></li>
+            </ul>
+        </nav>
+        <div class = "row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4"></div>
+          </div>
+      </div>
+        <!-- Header-->
+        <header class="d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <br>
+                <br>
+                <h1 class="mb-1 text-warning">THE MODEL</h1>
+                <h3 class="mb-5 text-primary"><em>Generate your fake news!</em></h3>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-success" id="trythemodel">
+            <div class="container px-4 px-lg-5 text-left">
+                <div class="row gx-4 gx-lg-5 justify-content-left">
+                    <div class="col-lg-5">
+                        <h2 class="text-dark" >Test out our model here!</h2>
+                        <p class="lead mb-5"><strong>Submit a prompt and category for the story and then a headline will be generated! </strong></p>
+                        <form action="{{url_for('generate_text')}}" method="POST" source="custom" name="form-1" ><pre></pre>
+                          <div class="form-group">
+
+
+                        <label for="genre" >Choose a category:</label>
+                        <select class="form-control-lg" rows="4" cols="50" placeholder="genre type" required="" id="text_gen_input_1" name="genre" >
+
+                          <option value= "crime">--select genre--</option>
+                          <option value="political">Political</option>
+                          <option value="crime">Crime</option>
+                          <option value="entertainment">Entertainment</option>
+                          <option value="comedy">Comedy</option>
+                          <option value="worldnews">World News</option>
+                          <option value="impact">Impact</option>
+
+                        </select>
+
+                            </div>
+                            <br>
+                            <br>
+<!--                       <textarea class="form-control-lg" rows="4" cols="50" placeholder="genre type" required="" id="text_gen_input_1" name="genre"></textarea> -->
+
+
+                            <textarea class="form-control-lg" rows="4" cols="50" placeholder="Write your prompt here..." required="" id="text_gen_input" name="prompt"></textarea>
+                         <br>
+                         <br>
+                         <div class="form-group">
+                         <button type="submit" class="btn btn-warning" id="text_gen_button">Generate Headline</button>
+
+                          </div>
+                        </form>
+                      
+                      <form action="{{url_for('results')}}" method="POST" source="custom" name="form-1" >
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                          <p class="lead mb-5"><strong>Do you want to turn that headline into an article?</strong></p>
+                        <ul id="generated_ul">
+                        <p>
+                        {{ notification }}
+                        </p>
+                        </ul>
+                          <button type="submit" class="btn btn-warning" id="article_gen_button">Generate Article in Backend (this may take a while...)</button>
+                        </form>
+                      <form action="{{url_for('show_article')}}" method="POST" source="custom" name="form-1" >
+                     <br>
+                     <br>
+                     <br>
+                     <br>
+                          <p class="lead mb-5"><strong>Show the article generated..</strong></p>
+                        <br>
+                        <p>
+                          {{generation_status}}
+                        </p>
+                       <button type="submit" class="btn btn-warning" id="article_gen_button">Show Article</button>
+                        </form>
+
+
+
+
+
+
+
+
+                        <br>
+                    </div>
+                    <div class="col-lg-5">
+                    <div class= "col-sm-4">
+                      </div>
+                      <h2 class="text-primary"> Fake Headline:</h2>
+                      <ul id="generated_ul">
+                      <p>
+                        {{ generated }}
+                        </p>
+                      <!-- generated items will be here. -->
+                      </ul>
+                    </div>
+                  <br>
+                  <br>
+                  <br>
+            <header class="d-flex align-items-right">
+                <div class="container px-4 px-lg-5 text-center right">
+                    <div class="col-lg-5">
+                      <h2 class="text-primary"> Fake News Article:</h2>
+                      <ul id="generated_ul">
+                      <p>
+                        {{ generated_article }}
+                        </p>
+                      <!-- generated items will be here. -->
+                      </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/aicampdotorg/"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/AICampOfficial"><i class="icon-social-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="https://github.com/minimaxir/aitextgen"><i class="icon-social-github"></i></a>
+                    </li>
+
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Wireless Union Batch B 2022 </p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- TEXTGEN JS-->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/text_gen.js') }}" defer=""></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+    </body>
+</html>

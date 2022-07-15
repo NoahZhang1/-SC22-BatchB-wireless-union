@@ -1,0 +1,524 @@
+[
+  {
+    "time_utc": "2022-07-11T15:03:00.800Z",
+    "account_id": "4774738e-c466-40ea-9836-5c223b9a3ce2",
+    "patch_length": 7174,
+    "user": "The Project"
+  },
+  {
+    "time_utc": "2022-07-11T15:12:39.995Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 84,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:15:58.346Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 82,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:16:24.689Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 79,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:16:33.137Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 78,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:16:39.446Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 79,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:16:44.624Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 79,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:16:45.152Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 70,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:16:46.016Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 71,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:16:53.426Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 79,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:13.586Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 70,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:13.742Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:15.923Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 64,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:18.008Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 63,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:20.465Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 64,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:23.414Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 63,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:29.372Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 68,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:30.233Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 59,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:33.170Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 64,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:39.845Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 95,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:44.009Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 81,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:48.503Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 59,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:53.258Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 74,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:17:55.781Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 59,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:15.377Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 90,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:18.230Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 90,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:20.291Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:26.213Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 74,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:33.974Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 108,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:46.448Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 79,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:53.987Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 66,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:55.700Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 65,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:18:59.996Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 59,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:19:07.322Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 93,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:20:34.595Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 153,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:20:38.414Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 151,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:20:52.049Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 142,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:21:02.570Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 95,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:21:08.924Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 94,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:21:16.859Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 94,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:21:17.795Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 95,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:21:59.528Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 78,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:22:05.231Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 70,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:22:11.663Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 69,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:22:18.389Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 79,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:22:25.142Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 78,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:22:35.210Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 77,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:22:41.186Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 77,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:22:57.092Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 77,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:23:02.132Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 76,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:24:14.993Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 70,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:24:20.603Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 71,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:25:36.515Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 77,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:25:41.984Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 77,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:25:45.833Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 80,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:25:59.024Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 98,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:13.589Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 82,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:25.268Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 65,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:25.412Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 62,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:25.664Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:25.868Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:26.054Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:26.345Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:44.573Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 62,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:45.098Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 62,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:45.515Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 62,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:45.899Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 62,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:46.370Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:26:46.946Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 64,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:27:04.721Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 88,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:27:48.344Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 105,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:28:44.279Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 70,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:35:18.476Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 55,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:35:39.536Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 77,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:36:12.305Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 71,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:36:27.482Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 121,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:43:27.260Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 65,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:43:33.452Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 68,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:44:05.864Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 70,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:44:10.658Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:56:46.979Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:56:57.728Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 60,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:57:00.458Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 59,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:57:04.106Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 60,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:57:05.663Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 61,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:57:11.264Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 56,
+    "user": "Irene Liu"
+  },
+  {
+    "time_utc": "2022-07-11T15:57:18.455Z",
+    "account_id": "b1ea5f09-6173-44bc-8c9f-0d8be76ad796",
+    "patch_length": 84,
+    "user": "Irene Liu"
+  }
+]
